@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">Hello em iu :3</span	><br />
+				<span class="space"/><span class="comments">Cái web này được viết từ ngày 07/05</span><br />
+				<span class="space"/><span class="comments">Và nó sẽ được mở khi em có keyword hehe.</span><br />
+				<span class="space"/><span class="comments">Nếu em đọc được đến dòng này thì chắc hẳn em đã nhận được món quà của anh :3 Sorry vì chữ không được đẹp nên anh ko viết thư ;-;</span><br />
+				<span class="space"/><span class="comments">Hmmm, anh biết là hẳn hơn 2 tuần rồi, anh với em cũng không nhắn tin cho nhau mấy ý. Trong anh trống vắng cực kì lun ý. Nhớ em, nhớ voice, nhớ cái má péo nữa huhu.</span><br />
+				<span class="space"/><span class="comments">Anh biến cái nỗi nhớ em thành động lực, động lực siu to khổng lồ lun, nhưng mà vì thế anh cũng bị áp lực ý :( thỉnh thoảng bị stress, anh cũng ko dám nói với em, vì em thì hay kiểu lo cho anh ý, anh ko nói vì sợ em bị anh hưởng. Hix.</span><br />
+				<span class="space"/><span class="comments">Thỉnh thoảng anh cũng tò mò em đang làm gì, đang ở đâu, tâm trạng ra sao. ~~ Vì nỗi nhớ tràn về lấp ko hết đc ý.</span><br />
+				<span class="space"/><span class="comments">Nói chung là yêu quá nên không lười nhác</span><br />
+				<span class="space"/><span class="comments">Anh muốn thơm em 10 phát =)))</span><br />
+				<span class="space"/><span class="comments">Hôm qua, mà chả biết là hôm qua nào nữa. Anh cũng có đi chơi một xíu 🤏. Cứ đi được một đoạn thì lại gặp 1 cặp đi cùng nhau. Chạnh lòng vải lun. Trong đầu thầm nghĩ "Thôi không sao, sắp đc gặp ny để ôm rồi hehe, cố lên". Rất là động lực :3</span><br /><br />
+				<span class="space"/><span class="comments">Hmmm Thiếu em nên văn sắp hết rùiiii </span><br />
+				<span class="space"/><span class="comments">Kỉ niệm 2 tháng yêu nhau bằng đôi lời tâm sự :3 hehe</span><br />
+				<span class="space"/><span class="comments">Sorry vì anh bận ôn thi nên phần hình ảnh khá phèn, nhưng mà tình cảm là chính mà đúng ko bae :3</span><br />
+				<span class="space"/><span class="comments">Zậy hoi nha, chúc em có những ngày vui vẻ và hạnh phúc, sau này mình nhắn trở lại sẽ hạnh phúc hơn nha</span><br />
+				<span class="space"/><span class="comments">Anh yêus em :3</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Lan, Chúng mình yêu nhau đã được 
+						<div id="elapseClock"></div>
+					⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠⁢⁣⁡⁠⁢⁡⁠⁢⁡⁠rồi đấy 
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">LeThao</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 <audio src="music.mp3" autoplay loop>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2010, 10, 2);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
